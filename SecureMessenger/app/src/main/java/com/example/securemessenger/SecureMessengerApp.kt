@@ -1,16 +1,17 @@
-package com.securemessenger
+package com.example.securemessenger
 
 import android.app.Application
-import com.securemessenger.utils.SecurityUtils
+import com.example.securemessenger.data.AppDatabase
 
 class SecureMessengerApp : Application() {
+    
+    val database: AppDatabase by lazy {
+        AppDatabase.getDatabase(this)
+    }
     
     override fun onCreate() {
         super.onCreate()
         instance = this
-        
-        // Initialize security utilities
-        SecurityUtils.initialize(this)
     }
     
     companion object {

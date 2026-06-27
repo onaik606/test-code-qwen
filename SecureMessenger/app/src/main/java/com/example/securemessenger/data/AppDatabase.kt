@@ -1,15 +1,15 @@
-package com.securemessenger.model
+package com.example.securemessenger.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Message::class, Contact::class], version = 1, exportSchema = false)
+@Database(entities = [User::class, Message::class, Connection::class], version = 1)
 abstract class AppDatabase : RoomDatabase() {
-    
+    abstract fun userDao(): UserDao
     abstract fun messageDao(): MessageDao
-    abstract fun contactDao(): ContactDao
+    abstract fun connectionDao(): ConnectionDao
     
     companion object {
         @Volatile

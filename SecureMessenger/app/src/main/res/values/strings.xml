@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Secure Messenger</string>
-    <string name="login">Login</string>
-    <string name="logout">Logout</string>
-    <string name="send_otp">Send OTP</string>
-    <string name="verify_otp">Verify OTP</string>
-    <string name="enter_phone">Enter Phone Number</string>
-    <string name="enter_otp">Enter OTP</string>
-    <string name="add_contact">Add Contact</string>
-    <string name="connected">Connected</string>
-    <string name="pending">Pending</string>
-    <string name="message_encrypted">Messages are end-to-end encrypted</string>
 </resources>
